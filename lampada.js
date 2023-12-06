@@ -6,7 +6,7 @@ const restaurar = document.querySelector('.restaurar')
 
 ligar.addEventListener('click', ()=> {
     if (!lampadaQuebrada()){
-        imagem.setAttribute('src','/img/ligada.jpg' )
+        imagem.setAttribute('src','/assets/img/ligada.jpg' )
     }else{
         alert('Lâmpada Quebrada não Liga Zé')
 
@@ -15,14 +15,14 @@ ligar.addEventListener('click', ()=> {
 
 desligar.addEventListener('click', function(){
     if (!lampadaQuebrada()){
-        imagem.setAttribute('src', '/img/desligada.jpg')
+        imagem.setAttribute('src', '/assets/img/desligada.jpg')
     }else{
         alert('Lâmpada Quebrada também não Desliga Zé')
     }
 })
 
 imagem.addEventListener('dblclick', ()=> {
-    imagem.setAttribute('src', '/img/quebrada.jpg')
+    imagem.setAttribute('src', '/assets/img/quebrada.jpg')
     
 })
 
